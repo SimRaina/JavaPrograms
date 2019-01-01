@@ -34,7 +34,6 @@ public class DuplicateCharInString {
 			Set<Entry<Character,Integer>> entrySet=map.entrySet();
 			for(Entry<Character,Integer> entry: entrySet) {
 				if(entry.getValue()>1) {
-					//System.out.printf("%s: %d %n", entry.getKey(),entry.getValue());
 					System.out.println(entry.getKey()+" : "+entry.getValue());
 				}
 		}

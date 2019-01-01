@@ -18,8 +18,6 @@ public class BirdEyeSentenceReverse {
 	public void logic2() {
 		
 		String str="This is me";
-		String s1="";
-		String s2="";
 		String s="";
 		char ch[]=str.toCharArray();
 		for(int i=0;i<ch.length;i++) {
@@ -30,11 +28,10 @@ public class BirdEyeSentenceReverse {
 				i++;
 			}
 			for(int j=i-1;j>=k;j--) {
-				s=Character.toString(ch[j]);
-				s1=s1+s;
-				}	
+				s=s+ch[j];
+				}
 		}
-		System.out.print(s1);
+		System.out.print(s);
 	}
 
 }

@@ -26,7 +26,7 @@ public class DuplicateElementArray {
 			duplicateSet.add(str);
 		}
 	}
-	System.out.println(duplicateSet);;
+	System.out.println(duplicateSet);
    }
 
 }
