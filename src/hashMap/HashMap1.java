@@ -15,24 +15,18 @@ public class HashMap1
         //Inserting key-value pairs to map using put() method
          
         map.put("ONE", 1);
-         
         map.put("TWO", 2);
-         
         map.put("THREE", 3);
-         
         map.put("FOUR", 4);
-         
         map.put("FIVE", 5);
          
         //Printing key-value pairs 
          
         Set<Entry<String, Integer>> entrySet = map.entrySet();
-         
         for (Entry<String, Integer> entry : entrySet) 
         {
             System.out.println(entry.getKey()+" : "+entry.getValue());
         }
-         
         System.out.println("-------------------------");
          
         //Creating another HashMap

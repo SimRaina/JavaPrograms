@@ -1,6 +1,3 @@
-/**
- * 
- */
 package interviewQuestions;
 
 import java.util.HashSet;

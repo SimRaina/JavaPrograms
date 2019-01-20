@@ -2,11 +2,10 @@ package array;
 
 public class ThirdLargest {
 
-	static void thirdLargest1(int arr[], 
-            int arr_size) 
+	static void thirdLargest1(int arr[], int arr_size) 
 { 
 /* There should be  
-atleast three elements */
+at least three elements */
 if (arr_size < 3) 
 { 
 System.out.printf(" Invalid Input "); 
@@ -38,7 +37,7 @@ System.out.printf("The third Largest element is: "+third);
 } 
 	
 	static void thirdLargest2(int arr[], int arr_size) { 
-		/* There should be atleast three elements */
+		/* There should be at least three elements */
 		if (arr_size < 3) { 
 			System.out.printf(" Invalid Input "); 
 			return; 

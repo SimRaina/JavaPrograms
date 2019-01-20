@@ -21,7 +21,7 @@ public class SecondHighest {
 	        } 
 	       
 	 
-	        for (int i = 2; i<arr.length; i ++) 
+	        for (int i = 2; i<arr.length; i++) 
 	        { 
 	            /* If current element is greater than first then update both 
 	              first and second */

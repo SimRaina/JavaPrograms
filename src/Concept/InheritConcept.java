@@ -1,6 +1,3 @@
-/**
- * 
- */
 package Concept;
 
 /**
@@ -30,7 +27,6 @@ class InheritConcept{
 		obj2.eat();
 		obj1.eat();
 		obj3.eat();
-		//aa.eat1();  error: aa is an instance of class A
 	}
 }
 

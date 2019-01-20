@@ -1,6 +1,3 @@
-/**
- * 
- */
 package Concept;
 import java.io.*;
 /**
@@ -13,11 +10,11 @@ class ArrayEG{
 			InputStreamReader is=new InputStreamReader(System.in);
 			BufferedReader bs=new BufferedReader(is);
 			int a[]=new int[5];
-			System.out.println("Enter nos.");
+			System.out.println("Enter numbers:");
 			for(i=0;i<5;i++){
 				a[i]=Integer.parseInt(bs.readLine());
 			}
-			System.out.println("Nos are");
+			System.out.println("Numbers are:");
 			for (i=0;i<5;i++){
 				System.out.println(a[i]);
 			}

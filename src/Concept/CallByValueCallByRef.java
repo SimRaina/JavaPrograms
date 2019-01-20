@@ -17,7 +17,7 @@ public class CallByValueCallByRef {
 		obj.p=10;
 		obj.q=20;
 		
-		obj.testSwap(obj);
+		obj.testSwap(obj); // Pass By Reference
 		
 		//After Swap
 		System.out.println("Pass By Ref: Swapped Values are: "+obj.p+" and "+obj.q);

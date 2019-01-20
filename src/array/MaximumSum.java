@@ -2,7 +2,7 @@ package array;
 
 class MaximumSum 
 { 
-    static int arr[] = new int[]{12, 34, 10, 6, 40}; 
+    static int arr[] = {12, 34, 10, 6, 40};
       
 
     static int findLargestSumPair() 
@@ -21,7 +21,7 @@ class MaximumSum
         } 
        
  
-        for (int i = 2; i<arr.length; i ++) 
+        for (int i = 2; i<arr.length; i++) 
         { 
             /* If current element is greater than first then update both 
               first and second */

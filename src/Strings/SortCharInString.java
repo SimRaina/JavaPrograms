@@ -1,6 +1,3 @@
-/**
- * 
- */
 package Strings;
 
 import java.util.Arrays;

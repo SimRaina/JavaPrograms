@@ -1,6 +1,3 @@
-/**
- * 
- */
 package interviewQuestions;
 
 import java.util.HashSet;
@@ -14,7 +11,7 @@ public class DuplicateElementArray {
 
 	
 	public static void main(String[] args) {
-	String duplicates[]=new String[] {"Java", "Spring", "Hibernate", "Java"};
+	String duplicates[]=new String[] {"Java", "Spring", "Hibernate", "Java", "Spring"};
 	Set<String> duplicateSet=new HashSet<>();
 	Set<String> nonduplicateSet=new HashSet<>();
 	

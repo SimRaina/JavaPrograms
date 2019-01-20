@@ -1,6 +1,3 @@
-/**
- * 
- */
 package hashsSet;
 
 import java.util.HashSet;
@@ -14,14 +11,14 @@ public class DuplicateElementArray1 {
 
 	
 	public static void main(String[] args) {
-	String duplicates[]=new String[] {"Java", "Spring", "Hibernate", "Java"};
+	String duplicates[]=new String[] {"Java", "Spring", "Hibernate", "Java", "Spring"};
 	Set<String> duplicateSet=new HashSet<>();
 	
 	for(String s: duplicates) {
 		if(duplicateSet.add(s)==false) {
 			System.out.println("Duplicate Element is: "+s);
 		}
-	}
+	 }
 	
    }
 

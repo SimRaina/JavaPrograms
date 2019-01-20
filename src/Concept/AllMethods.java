@@ -1,6 +1,3 @@
-/**
- * 
- */
 package Concept;
 
 /**
@@ -14,7 +11,7 @@ class AllMethods{
 				}
 		
 		void fun1(int a,int b){  //Pass value
-			x=a;    //local variable
+			x=a;    //local variable    this.x=x if x is passed in fun1()
 			y=b;
 			int s=a+b;
 			System.out.println(s);
