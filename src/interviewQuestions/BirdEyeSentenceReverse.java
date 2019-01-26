@@ -28,8 +28,9 @@ public class BirdEyeSentenceReverse {
 				i++;
 			}
 			for(int j=i-1;j>=k;j--) {
-				s=s+ch[j];
+				s=s+str.charAt(j);  // corrected as prat of skype interview with Alert Enterprises
 				}
+			s=s+" ";
 		}
 		System.out.print(s);
 	}
