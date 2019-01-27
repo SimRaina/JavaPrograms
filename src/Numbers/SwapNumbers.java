@@ -28,7 +28,8 @@ public class SwapNumbers {
 		y=temp;
 		
 		System.out.println("After swapping: x = "+x+ " y = " + y);
-
+        
+		in.close();
 	}
 
 }

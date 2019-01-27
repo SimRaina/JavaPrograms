@@ -28,6 +28,7 @@ class LCM
         }
         int l=p/h;
         System.out.println("LCM="+l);
+        sc.close();
     }
 }
 

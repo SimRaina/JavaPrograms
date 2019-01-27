@@ -28,6 +28,7 @@ public class PalindromeNumber {
 			System.out.println(n+ " is Palindrome Number");
 		else 
 			System.out.println(n+ " is not Palindrome Number");
+		in.close();
 	}
 
 }

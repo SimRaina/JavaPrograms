@@ -28,6 +28,8 @@ class HCF
         }
         //int l=p/h;
         System.out.println("HCF="+h);
+        sc.close();
     }
+    
 }
 
