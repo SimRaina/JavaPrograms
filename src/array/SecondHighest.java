@@ -2,7 +2,7 @@ package array;
 
 public class SecondHighest {
 	
-	static int arr[] = new int[]{12, 34, 10, 6, 40}; 
+	static int arr[] = {12, 34, 10, 6, 40}; 
 	      
 
 	    static int secondHighest() 

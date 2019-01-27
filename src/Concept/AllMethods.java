@@ -10,7 +10,7 @@ class AllMethods{
 				System.out.println("fun method");
 				}
 		
-		void fun1(int a,int b){  //Pass value
+		void fun1(int a,int b){  //Pass values
 			x=a;    //local variable    this.x=x if x is passed in fun1()
 			y=b;
 			int s=a+b;

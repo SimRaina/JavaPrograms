@@ -27,6 +27,7 @@ class InheritConcept{
 		obj2.eat();
 		obj1.eat();
 		obj3.eat();
+		// obj1.eat1(); Parent reference child's method - will give error
 	}
 }
 

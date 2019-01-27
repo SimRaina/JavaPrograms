@@ -1,6 +1,3 @@
-/**
- * 
- */
 package array;
 
 import java.util.Scanner;
@@ -11,7 +8,7 @@ import java.util.Scanner;
  */
 public class MergingArrays {
 		public static void main(String args[]) {
-			int size1, size2, size,i,j,k;
+			int size1, size2, size,i,k;
 			int arr1[]=new int[5];
 			int arr2[]=new int[5];
 			int merge[]=new int[10];
@@ -46,6 +43,8 @@ public class MergingArrays {
 			System.out.println("Merged Arrays");
 			for(i=0; i<size; i++) {
 				System.out.println(merge[i]+" ");
+				
 			}
+			scan.close();
 		}
 }

@@ -12,10 +12,10 @@ public class BirdEyeSentenceReverse {
 	public static void main(String[] args) {
 		 
 		BirdEyeSentenceReverse obj=new BirdEyeSentenceReverse();
-		obj.logic2();
+		obj.logic1();
 	}
 	
-	public void logic2() {
+	public void logic1() {
 		
 		String str="This is me";
 		String s="";
@@ -28,7 +28,7 @@ public class BirdEyeSentenceReverse {
 				i++;
 			}
 			for(int j=i-1;j>=k;j--) {
-				s=s+str.charAt(j);  // corrected as prat of skype interview with Alert Enterprises
+				s=s+str.charAt(j);  // corrected as part of Skype interview with Alert Enterprises
 				}
 			s=s+" ";
 		}
