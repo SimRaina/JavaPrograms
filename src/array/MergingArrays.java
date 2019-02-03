@@ -2,10 +2,6 @@ package array;
 
 import java.util.Scanner;
 
-/**
- * @author Simran
- *
- */
 public class MergingArrays {
 		public static void main(String args[]) {
 			int size1, size2, size,i,k;

@@ -4,7 +4,7 @@ package interviewQuestions;
  * @author Simran
  *
  */
-public class CountCharacterInEachWords {
+public class CountCharacterInEachWord {
 
 	
 	public static void main(String[] args) {

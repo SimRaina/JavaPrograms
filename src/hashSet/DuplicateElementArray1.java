@@ -1,4 +1,4 @@
-package hashsSet;
+package hashSet;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -19,7 +19,5 @@ public class DuplicateElementArray1 {
 			System.out.println("Duplicate Element is: "+s);
 		}
 	 }
-	
    }
-
 }
