@@ -48,8 +48,10 @@ Set<Entry<Integer,Integer>> entryset=map.entrySet();
 for(Entry<Integer,Integer> entry:entryset){
  
 	int n=entry.getValue()/2;
-	
- System.out.println(n + " pair of"+ entry.getKey());
+	if (n!=0)
+		{
+			System.out.println(n + " pair of"+ entry.getKey());
+		}
  }
 }
 }
