@@ -9,7 +9,6 @@ The function must return the number that indicate how many PAIRS of socks are av
 
 package interviewQuestions;
 
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -19,7 +18,7 @@ public class Agoda_FindPairofSocks{
 
       public static void main(String args[]){
 
-       int n=6;
+       int n=12;
 
        int[] arr = {1,2,1,2,1,2,1,2,3,4,4,4};
 

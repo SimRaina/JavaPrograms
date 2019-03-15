@@ -24,6 +24,7 @@ public class PrimeNumbersSquareRoot {
 	else {
 		System.out.println(n+ " is not Prime Number");
 	}
+	in.close();
 }
 	public static boolean isPrime(int n) {
 		if (n<=1) {

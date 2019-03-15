@@ -22,7 +22,7 @@ public class RemoveDuplicateInString {
 		StringBuffer sf=new StringBuffer();
 		
 		for(int i=0;i<str.length();i++) {
-		Character c=str.charAt(i);
+		char c=str.charAt(i);  
 		
 		if(!set.contains(c)) {
 			set.add(c);
