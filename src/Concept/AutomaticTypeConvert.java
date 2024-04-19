@@ -8,6 +8,7 @@ public class AutomaticTypeConvert
           
         //automatic type conversion or Widening
         // Byte->Short->Int->Long->Float->Double
+       
         long l = i;  
           
         //automatic type conversion 

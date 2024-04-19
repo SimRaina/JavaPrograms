@@ -28,6 +28,8 @@ public class PalindromeString {
 		
 		else
 			System.out.println(s+ " is not Palindrome");
+		
+		in.close();
 	}
-
+   
 }

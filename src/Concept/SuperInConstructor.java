@@ -25,7 +25,8 @@ class Student1 extends Person1
 /* Driver program to test*/
 class SuperInConstructor
 { 
- public static void main(String[] args) 
+ @SuppressWarnings("unused")
+public static void main(String[] args) 
  { 
      Student1 s = new Student1(); // Invoked student constructor + person constructor
  } 

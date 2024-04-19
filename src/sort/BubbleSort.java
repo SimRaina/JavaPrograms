@@ -1,4 +1,4 @@
-package Concept;
+package sort;
 import java.io.*;
 /**
  * @author Simran

@@ -33,7 +33,8 @@ public class ConvertToString
   public void thirdWay() {
 	  
 	      int d = 1234; 
-	      Integer obj = new Integer(d); 
+	      @SuppressWarnings("removal")
+		  Integer obj = new Integer(d); 
 	      String str4 = obj.toString(); 
 	      System.out.println("String str4 - third way -" + str4); 
 	    

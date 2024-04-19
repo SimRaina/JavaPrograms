@@ -5,8 +5,16 @@ import java.io.*;
  *
  */
 class ArrayEG{
-		public static void main(String args[]) throws IOException{
-			int i=0;
+		
+	 public static void main(String args[]) throws IOException{
+		 
+		 ArrayEG areg=new ArrayEG();
+		 areg.arrayFun();
+			
+		}
+	 
+	 void arrayFun() throws NumberFormatException, IOException {
+		 int i=0;
 			InputStreamReader is=new InputStreamReader(System.in);
 			BufferedReader bs=new BufferedReader(is);
 			int a[]=new int[5];
@@ -18,5 +26,5 @@ class ArrayEG{
 			for (i=0;i<5;i++){
 				System.out.println(a[i]);
 			}
-		}
+	 }
 }
