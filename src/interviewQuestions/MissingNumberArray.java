@@ -10,7 +10,7 @@ public class MissingNumberArray {
 	public static void main(String[] args) {
 		int array[]= {1,2,3,4,6};
 		int missingnumber=getMissingNumber(array,6);
-		System.out.println("Missing number is "+missingnumber);
+		System.out.println("Missing number is " + missingnumber);
 	}
 	
 	private static int getMissingNumber(int array[], int n) {
@@ -23,4 +23,3 @@ public class MissingNumberArray {
 		return expectedsum-actualsum;
 		}
 	}
-

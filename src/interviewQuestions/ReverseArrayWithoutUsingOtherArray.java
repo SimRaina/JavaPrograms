@@ -1,4 +1,4 @@
-package array;
+package interviewQuestions;
 
 public class ReverseArrayWithoutUsingOtherArray {
 	

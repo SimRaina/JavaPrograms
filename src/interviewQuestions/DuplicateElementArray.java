@@ -12,18 +12,11 @@ public class DuplicateElementArray {
 	
 	public static void main(String[] args) {
 	String duplicates[]=new String[] {"Java", "Spring", "Hibernate", "Java", "Spring"};
-	Set<String> duplicateSet=new HashSet<>();
-	Set<String> nonduplicateSet=new HashSet<>();
+	Set<String> set=new HashSet<>();
 	
 	for (String str: duplicates) {
-		if(!nonduplicateSet.contains(str)) {
-			nonduplicateSet.add(str);
-		}
-		else {
-			duplicateSet.add(str);
-		}
+			set.add(str);
 	}
-	System.out.println(duplicateSet);
+	System.out.println(set);
    }
-
 }

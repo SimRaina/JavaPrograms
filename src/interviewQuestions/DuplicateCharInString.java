@@ -12,26 +12,19 @@ import java.util.Set;
 public class DuplicateCharInString {
 
 	public static void main(String[] args) {
-	String str="Preet";
+	String str="swiss";
 	displayDuplicates(str);
 	}
 	
 	public static void displayDuplicates(String str) {
 		Map<Character,Integer> map=new HashMap<>();
-		char ch[]=str.toCharArray();
 		
-		for (char c: ch) {
-			if(!map.containsKey(c)) {
-				map.put(c, 1);
-			}
-			else {
-				map.put(c, map.get(c)+1);
-			}
+		for (char c: str.toCharArray()) {
+			map.put(c, map.getOrDefault(c,0)+1);
 		}
-			Set<Entry<Character,Integer>> entrySet=map.entrySet();
-			for(Entry<Character,Integer> entry: entrySet) {
+			for(Entry<Character,Integer> entry: map.entrySet()) {
 				if(entry.getValue()>1) {
-					System.out.println(entry.getKey()+" : "+entry.getValue());
+					System.out.println("Character " + entry.getKey()+" occurs "+entry.getValue() + " times.");
 				}
 		}
 	}

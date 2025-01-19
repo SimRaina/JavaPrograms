@@ -1,10 +1,8 @@
 package interviewQuestions;
 
-//import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Set;
 
 public class AlertEnterprise_FindVowels {
 
@@ -20,9 +18,6 @@ public class AlertEnterprise_FindVowels {
 		{
 			
 			Map<Character,Integer> map= new HashMap<>();
-			Map<Character,Integer> map1=new HashMap<>();
-			//ArrayList<Integer> list=new ArrayList<>();
-			//Character ch[]=s.toCharArray();   
 			
 			for (int i=0;i<s.length();i++) {
 				
@@ -35,29 +30,16 @@ public class AlertEnterprise_FindVowels {
 					//list.add(i);
 				if(!(map.containsKey(c))) {
 					map.put(c, 1);
-					map1.put(c, i);
 				}
 				else 
 					map.put(c, map.get(c)+1);
-				map1.put(c, i);
 			}
 		}
-		
-		Set<Entry<Character,Integer>> entryset=map.entrySet();	
 			
-			for (Entry<Character,Integer> entry: entryset){
+			for (Entry<Character,Integer> entry: map.entrySet()){
 				
 				System.out.println("Character: " + entry.getKey() + " occured in the string: " + entry.getValue() + " times" );
 			}
-			/* for (int i = 0; i<list.size();i++) {
-				System.out.println("Location of " + i + " vowel " + list.get(i));
-			} */
-			
-			entryset=map1.entrySet();
-			for (Entry<Character,Integer> entry1: entryset) {
-				System.out.println("Character: " + entry1.getKey() + " occured at: " + entry1.getValue());
-			}
 		}
-
 	}
 

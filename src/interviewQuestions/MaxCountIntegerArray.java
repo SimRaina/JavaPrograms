@@ -6,7 +6,6 @@ package interviewQuestions;
 import java.util.Map.Entry;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * @author Simran
@@ -23,19 +22,11 @@ public class MaxCountIntegerArray {
 		Map<Integer,Integer> map=new HashMap<>();
 		
 		for (int i: arr) {
-			if(!map.containsKey(i)) {
-				map.put(i, 1);
-			}
-			else {
-				map.put(i, map.get(i)+1);
-			}
+			map.put(i, map.getOrDefault(i, 0)+1);
 		}
-			Set<Entry<Integer,Integer>> entrySet=map.entrySet();
-			for(Entry<Integer,Integer> entry: entrySet) {
+		for(Entry<Integer,Integer> entry: map.entrySet()) {
 				
-					System.out.println(entry.getKey()+" : "+entry.getValue());
-				
+			System.out.println(entry.getKey()+" : "+entry.getValue());		
 		}
 	}
-
 }

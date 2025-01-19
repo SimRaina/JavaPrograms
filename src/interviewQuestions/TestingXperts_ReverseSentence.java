@@ -15,11 +15,9 @@ public class TestingXperts_ReverseSentence {
 		 String res="";
 		 String[] words = s.split(" "); 
 		 for (int i = words.length-1; i >= 0; i--) { 
-		 res = res + words[i] + " "; 
-		
+			 res = res + words[i] + " "; 
+		 }
+		 return String.join(" ", res);
 	}
-		    return String.join(" ", res);
-
-}
 }
 
