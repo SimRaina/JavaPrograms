@@ -23,7 +23,7 @@ public class BirdEyeSentenceReverse {
 			}
 			for(int j=i-1;j>=k;j--) {
 				s=s+str.charAt(j); 
-				}
+			}
 			s=s+" ";
 		}
 		System.out.print(s);

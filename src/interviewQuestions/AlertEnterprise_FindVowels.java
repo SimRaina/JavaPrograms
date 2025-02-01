@@ -8,10 +8,8 @@ public class AlertEnterprise_FindVowels {
 
 		public static void main(String[] args) {
 			
-			
-			String str="ALERTENTERPRISE";
-			
-	      findVowels(str);
+		  String str="ALERTENTERPRISE";
+		  findVowels(str);
 		}
 		
 		static void findVowels(String s)
@@ -24,15 +22,9 @@ public class AlertEnterprise_FindVowels {
 				Character c=s.charAt(i);
 				
 				if((c.equals('A')) || (c.equals('E')) || (c.equals('I')) || (c.equals('O')) || (c.equals('U'))) {
-				// Tricky Part: equals can work on Character and not primitive type char
-					// so created Character ch but toCharArray cannot be invoked on Character
-					// so used charAt()
-					//list.add(i);
-				if(!(map.containsKey(c))) {
-					map.put(c, 1);
-				}
-				else 
-					map.put(c, map.get(c)+1);
+				/* equals can work on Character and not primitive type char
+				so created Character ch but toCharArray cannot be invoked on Character so used charAt()*/	
+				map.put(c, map.getOrDefault(c,0)+1);
 			}
 		}
 			

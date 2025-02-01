@@ -24,10 +24,9 @@ public class SwapFirstLastCharacters {
 			}
 			
 			char temp=ch[k];
-			ch[k]=ch[i-1];
+			ch[k]=ch[i-1]; // i-1 = last character
 			ch[i-1]=temp;
 		}
-		
 		return new String(ch);
 	}
 

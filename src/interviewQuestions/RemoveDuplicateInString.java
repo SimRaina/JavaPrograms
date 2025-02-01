@@ -12,24 +12,19 @@ public class RemoveDuplicateInString {
 	
 	public static void main(String[] args) {
 	String str="Preet";
-	System.out.println("Length of:"+str+" is:"+str.length());
-	String strnew=removeDuplicates(str);
-	System.out.println("Length of:"+strnew+" is:"+strnew.length());
+	System.out.println("Length of given String is:"+str.length());
+	removeDuplicates(str);
 	}
 	 
-	public static String removeDuplicates(String str) {
+	public static void removeDuplicates(String str) {
 		Set<Character> set=new HashSet<>();
-		StringBuffer sf=new StringBuffer();
 		
 		for(int i=0;i<str.length();i++) {
 		char c=str.charAt(i);  
-		
-		if(!set.contains(c)) {
-			set.add(c);
-			sf.append(c);
-		}
+		set.add(c); // set doesn't contain duplicate
 	}
-	return sf.toString();	
+
+	System.out.println("Size of String with non repeating charcters:" + set.size());	
 }
 }
 
