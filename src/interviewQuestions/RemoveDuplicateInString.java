@@ -6,7 +6,7 @@ import java.util.Set;
 public class RemoveDuplicateInString {
 	public static void main(String[] args) {
 		String str="Preet";
-		System.out.println("Length of given String is:"+str.length());
+		System.out.println("Length of given String is: "+str.length());
 		removeDuplicates(str);
 		}
 	public static void removeDuplicates(String str) {
