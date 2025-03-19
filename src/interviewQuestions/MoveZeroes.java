@@ -16,20 +16,16 @@ public class MoveZeroes {
 		 int n = arr1.length;
 		 
 		 for(int i = 0; i < n; i++) {
-			 
 			 if(arr1[i] != 0) {
-				 
 				 int temp = arr1[index];
 				 arr1[index] = arr1[i];
 				 arr1[i] = temp;
-				 
 				 index++;
-			 }
-			 
-		 }	    
-     for(int i=0; i<n; i++) {
-    	 System.out.print(arr1[i]);
-     }
- }
+			 }	 
+		  }	    
+                   for(int i=0; i<n; i++) {
+    	                System.out.print(arr1[i]);
+                  }
+      }
 }
 
