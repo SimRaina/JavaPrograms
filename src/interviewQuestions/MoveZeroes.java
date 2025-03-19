@@ -1,17 +1,11 @@
 package interviewQuestions;
 
-
 public class MoveZeroes {
-
 	public static void main(String[] args) {
 		int[] arr = {4, 0, 2, 0, 7, 1, 0, 6, 8};
-		
 		moveZeroes(arr);
-
-	}
-	
+	 }
 	static void moveZeroes(int[] arr1) {
-		
 		 int index = 0;
 		 int n = arr1.length;
 		 
