@@ -22,6 +22,7 @@ class ABC{
 	private ABC() {
 		System.out.println("This is Private Constructor");	
 	}
+	
 	public static ABC getInstance() {
 		return obj;
 	}
