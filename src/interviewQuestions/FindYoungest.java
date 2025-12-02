@@ -7,9 +7,13 @@ import java.util.Map.Entry;
 public class FindYoungest {
 
 	public static void main(String[] args) {
+        test1();
+        // test2();
+    }
+
+    static void test1() {
 		// Creating a HashMap to store student names and their ages
         HashMap<String, Integer> students = new HashMap<>();
-        
         // Adding student data
         students.put("Alice", 20);
         students.put("Bob", 19);
@@ -27,9 +31,26 @@ public class FindYoungest {
                 youngestStudent = entry.getKey();
             }
         }
-
         // Printing the youngest student name
         System.out.println("The youngest student is: " + youngestStudent + " (Age: " + minAge + ")");
-    }	
+    }
+
+    static void test2() {
+        // Creating a HashMap to store student names and their ages
+        Map<String, Integer> students = new HashMap<>();
+        students.put("Alice", 20);
+        students.put("Bob", 19);
+        students.put("Charlie", 22);
+        students.put("David", 18);
+        students.put("Emma", 21);
+
+        // Finding the youngest student using Streams
+        students.entrySet()
+                .stream()
+                .min(Entry.comparingByValue())
+                .ifPresent(youngest ->
+                        System.out.println("The youngest student is: "
+                        + youngest.getKey() + " (Age: " + youngest.getValue() + ")"));
+    }
 }
 

@@ -1,12 +1,17 @@
 package interviewQuestions;
- 
+
+
+import java.util.Arrays;
+import java.util.stream.Collectors;
 
 public class BirdEyeSentenceReverse {
 
 	public static void main(String[] args) {
 		 
 		BirdEyeSentenceReverse obj=new BirdEyeSentenceReverse();
+        // obj.logic1();
 		obj.logic2();
+        // obj.logic3();
 	}
 	
 	public void logic1() {
@@ -44,5 +49,15 @@ public class BirdEyeSentenceReverse {
 		}
 		System.out.println(s);
 	}
+
+    public void logic3() {
+        String str = "This is me";
+
+        String result = Arrays.stream(str.split(" "))
+                .map(word -> new StringBuilder(word).reverse().toString())
+                .collect(Collectors.joining(" "));
+
+        System.out.println(result);   // sihT si em
+    }
 
 }

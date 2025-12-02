@@ -1,47 +1,41 @@
 package interviewQuestions;
 
-public class ArraySplitting {
-	
-	public static void main(String args[]) {
-		
-		int arr[] = {1,2,3,4,5,5};
-		int n= arr.length;
-		printTwoSubArrays(arr, n);
-	}
-	
-	public static int findSplitPoint(int arr[], int n) {
-		
-		int leftsum=0;
-		
-		for(int i=0; i<n; i++) {
-			leftsum+=arr[i];
-			
-		    int rightsum=0;
-		    
-		    for(int j=i+1; j<n; j++)
-		    	rightsum+=arr[j];
-		    	
-		    if(leftsum==rightsum)
-		    	return i+1; 
-		}
-		return -1;	
-	}
+import java.util.Arrays;
 
-	
-	public static void printTwoSubArrays(int arr[], int n) {
-		int splitPoint= findSplitPoint(arr, n);
-		
-		if(splitPoint==-1 || splitPoint==n) {
-			System.out.println("Split Not Possible");
-			return;
-		}
-		
-		for(int i=0; i<n; i++) {
-			
-			if(splitPoint==i) {
-				System.out.println();	
-			}
-			System.out.print(arr[i] + " ");
-		}	
-	}
+public class ArraySplitting {
+
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5, 5};
+        splitAndPrint(arr);
+    }
+
+    // O(n) solution
+    public static void splitAndPrint(int[] arr) {
+
+        int totalSum = Arrays.stream(arr).sum();
+
+        int leftSum = 0;
+        int splitIndex = -1;
+
+        for (int i = 0; i < arr.length - 1; i++) {  // can't split after last element
+            leftSum += arr[i];
+            int rightSum = totalSum - leftSum;
+
+            if (leftSum == rightSum) {
+                splitIndex = i + 1;
+                break;
+            }
+        }
+
+        if (splitIndex == -1) {
+            System.out.println("Split Not Possible");
+            return;
+        }
+
+        int[] left = Arrays.copyOfRange(arr, 0, splitIndex);
+        int[] right = Arrays.copyOfRange(arr, splitIndex, arr.length);
+
+        System.out.println(Arrays.toString(left));
+        System.out.println(Arrays.toString(right));
+    }
 }

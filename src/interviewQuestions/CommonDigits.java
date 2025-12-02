@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class CommonDigits {
 
@@ -14,8 +15,12 @@ public class CommonDigits {
 	 result = (3, 2, 7)  Exclude Duplicates (use Set)
 	 */
 	public static void main(String[] args) {
-		
-		List<Integer> list1 = new LinkedList<>();
+        logic1();
+        // logic2();
+    }
+
+    static void logic1() {
+        List<Integer> list1 = new LinkedList<>();
 		List<Integer> list2 = new LinkedList<>();
 		Set<Integer> result = new HashSet<>();
 		
@@ -31,4 +36,15 @@ public class CommonDigits {
 		}
         System.out.println(result);
 	}
+
+    static void logic2() {
+        List<Integer> list1 = Arrays.asList(1, 3, 3, 5, 2, 7);
+        List<Integer> list2 = Arrays.asList(3, 2, 7, 4);
+
+        Set<Integer> result = list1.stream()
+                .filter(new HashSet<>(list2)::contains)   // O(1) lookups
+                .collect(Collectors.toSet());            // deduplicates automatically
+
+        System.out.println(result);
+    }
 }
