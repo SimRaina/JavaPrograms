@@ -3,12 +3,13 @@ package interviewQuestions;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class FirstNonRepetitiveChar {
     public static void main(String[] args) {
         String input = "systemengineer";
         char result = findFirstNonRepetitiveChar(input);
-
+        // char result = logic2(input);
         if (result != 0) {
             System.out.println("The first non-repetitive character is: " + result);
         } else {
@@ -36,5 +37,21 @@ public class FirstNonRepetitiveChar {
         }
 
         return 0; // Return 0 if no non-repetitive character is found
+    }
+
+    public static char logic2(String str) {
+        return str.chars()
+                .mapToObj(c -> (char) c)
+                .collect(Collectors.groupingBy(
+                        c -> c,
+                        LinkedHashMap::new,     // preserve insertion order
+                        Collectors.counting()
+                ))
+                .entrySet()
+                .stream()
+                .filter(e -> e.getValue() == 1)
+                .map(Map.Entry::getKey)
+                .findFirst()
+                .orElse((char) 0);
     }
 }
