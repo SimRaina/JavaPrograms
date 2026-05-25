@@ -6,12 +6,10 @@ import java.util.Map.Entry;
 import java.util.stream.Collectors;
 
 public class AlertEnterprise_FindVowels {
-
 		public static void main(String[] args) {
-			
 		  String str="AlertEnterprise";
 		  findVowels(str);
-          // findVowels1(str);
+		  // findVowels1(str);
 		}
 		
 		static void findVowels(String s) {
@@ -28,8 +26,8 @@ public class AlertEnterprise_FindVowels {
 		}
 
     static void findVowels1(String s) {
-        s.toUpperCase()
-                .chars()
+		s.chars()
+				.map(Character::toUpperCase)
                 .mapToObj(c -> (char) c)
                 .filter(c -> "AEIOU".indexOf(c) >= 0)
                 .collect(Collectors.groupingBy(c -> c, Collectors.counting()))
