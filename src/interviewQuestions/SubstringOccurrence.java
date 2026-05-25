@@ -16,18 +16,18 @@ public class SubstringOccurrence {
 			if(words[i].length() > 2) {
 				if(words[i].contains("an")) {
 					count++;
-				}	
+				}
 			}
 		}
 		System.out.println(" \"an\" exists: " + count + " times");
 	}
     
 	static void logic2(String str) {
-		
-		List<String> words = Arrays.asList(str.split(","));
-		long count = words.stream()
-		.filter(value -> value.contains("an"))
-		.count();
-		System.out.println(" \"an\" exists: " + count + " times");
+
+		long count = Arrays.stream(str.split(","))
+				.filter(s -> s.contains("an"))
+				.count();
+
+		System.out.println("\"an\" exists: " + count + " times");
 	}
 }
