@@ -29,11 +29,5 @@ public class TestingXperts_ReverseSentence {
                             return String.join(" ", list);
                         }
                 ));
-
-        /*
-        return Arrays.stream(str.split(" "))
-        .reduce((a, b) -> b + " " + a)
-        .orElse("");
-         */
     }
 }
