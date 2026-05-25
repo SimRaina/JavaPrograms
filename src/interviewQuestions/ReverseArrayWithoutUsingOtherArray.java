@@ -1,11 +1,10 @@
 package interviewQuestions;
 
-/* 2  4  6   8   10
-            -2  -1  Index
-*/
-
 import java.util.Arrays;
 import java.util.stream.IntStream;
+
+/* 2  4  6   8   10
+            -2  -1  Index   */
 
 public class ReverseArrayWithoutUsingOtherArray {
 	
