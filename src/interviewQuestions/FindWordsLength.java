@@ -6,12 +6,13 @@ import java.util.Arrays;
  * @author Simran
  *
  */
-public class CountCharacterInEachWord {
+public class FindWordsLength {
 
 	public static void main(String[] args) {
 		String str="this is java program";
-		count(str);
+		// count(str);
         // count1(str);
+		count2(str);
 	}
 	
 	static void count(String str) {
@@ -28,6 +29,16 @@ public class CountCharacterInEachWord {
 			if(!s.isEmpty())
 				System.out.println(s+"->"+s.length());
 		}	
+	}
+
+	static void count2(String str) {
+		String[] words = str.split(" ");
+
+		for (String s : words) {
+			if (!s.isEmpty()) {
+				System.out.println(s + " -> " + s.length());
+			}
+		}
 	}
 
     static void count1(String str) {
