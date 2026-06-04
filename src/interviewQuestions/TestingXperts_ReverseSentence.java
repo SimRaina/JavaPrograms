@@ -12,12 +12,12 @@ public class TestingXperts_ReverseSentence {
         // System.out.println("Reverse is=> " + findreverse1(str));
 	}
 	static String findReverse(String s) {
-        String res="";
+        String revSentece = "";
         String[] words = s.split(" ");
         for (int i = words.length-1; i >= 0; i--) {
-			 res = res + words[i] + " "; 
+			 revSentece = revSentece + words[i] + " "; 
         }
-        return String.join(" ", res);
+        return String.join(" ", revSentece);
 	}
 
     static String findReverse1(String str) {
