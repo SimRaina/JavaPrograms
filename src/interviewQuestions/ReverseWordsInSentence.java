@@ -6,8 +6,8 @@ import java.util.stream.Collectors;
 public class ReverseWordsInSentence {
 	public static void main(String[] args) {
 		ReverseWordsInSentence obj=new ReverseWordsInSentence();
-        // obj.logic1();
-		obj.logic2();
+        obj.logic1();
+		// obj.logic2();
         // obj.logic3();
 	}
 	
@@ -16,13 +16,11 @@ public class ReverseWordsInSentence {
 		String s="";
 		char[] ch=str.toCharArray();
 		for(int i=0;i<ch.length;i++) {
-			
 			int k=i;
-			
 			while (i<ch.length && ch[i]!=' ') {
 				i++;
 			}
-			for(int j=i-1;j>=k;j--) {
+			for(int j=i-1;j>=k;j--) {  // Reverse String logic
 				s=s+str.charAt(j); 
 			}
 			s=s+" ";
@@ -34,10 +32,8 @@ public class ReverseWordsInSentence {
 		String str="This is me";  // siht si em
 		String s="";
 		String[] words = str.split(" ");
-		
 		for(int i = 0; i < words.length; i++) {
-			for(int j = words[i].length()-1; j >= 0; j--) {
-				
+			for(int j = words[i].length()-1; j >= 0; j--) { // Reverse String logic
 				s += words[i].charAt(j);
 			}
 			s += " ";
