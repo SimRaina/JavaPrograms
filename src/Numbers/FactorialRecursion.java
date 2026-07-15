@@ -1,12 +1,5 @@
-/**
- * 
- */
-package Numbers;
+package numbers;
 
-/**
- * @author Simran
- *
- */
 public class FactorialRecursion {
 
 	static int factorial(int n) {

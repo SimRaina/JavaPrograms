@@ -1,11 +1,7 @@
-package Strings;
+package strings;
 
 import java.util.Arrays;
 
-/**
- * @author Simran
- *
- */
 public class SortCharInString {
 
 	

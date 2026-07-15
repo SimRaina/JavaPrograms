@@ -1,14 +1,7 @@
-/**
- * 
- */
-package Numbers;
+package numbers;
 
 import java.util.Scanner;
 
-/**
- * @author Simran
- *
- */
 public class ArmstrongNumber {
 
 	public static void main(String[] args) {

@@ -1,12 +1,5 @@
-/**
- * 
- */
-package Numbers;
+package numbers;
 
-/**
- * @author Simran
- *
- */
 public class FibonacciSeries {
 
 	public static void main(String[] args) {

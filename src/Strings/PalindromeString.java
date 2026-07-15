@@ -1,14 +1,7 @@
-/**
- * 
- */
-package Strings;
+package strings;
 
 import java.util.Scanner;
 
-/**
- * @author Simran
- *
- */
 public class PalindromeString {
 
 	public static void main(String[] args) {

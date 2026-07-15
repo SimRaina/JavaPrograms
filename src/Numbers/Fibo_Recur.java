@@ -1,4 +1,4 @@
-package Numbers;
+package numbers;
 
 import java.util.Scanner;
 
@@ -17,8 +17,6 @@ public class Fibo_Recur {
 	}
 	
 	static int fib(int i) {
-	
-		
 		if (i==1 | i==2) {
 			result= 1;
 		}
@@ -26,7 +24,6 @@ public class Fibo_Recur {
 		else {
 			result = fib(i-1) + fib(i-2);
 		}
-		
 		return result;
 	}
 

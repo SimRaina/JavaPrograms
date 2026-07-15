@@ -1,12 +1,5 @@
-/**
- * 
- */
-package Numbers;
+package numbers;
 
-/**
- * @author Simran
- *
- */
 import java.util.*;
 class HCF
 {

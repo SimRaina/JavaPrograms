@@ -1,16 +1,8 @@
-/**
- * 
- */
-package Numbers;
+package numbers;
 
 import java.util.Scanner;
 
-/**
- * @author Simran
- *
- */
 public class PalindromeNumber {
-
 
 	public static void main(String[] args) {
 		int n,r,temp,reverse=0;

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Numbers;
+package numbers;
 
 /**
  * @author Simran
