@@ -3,6 +3,7 @@ package interviewQuestions;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.stream.Collectors;
 
 public class FirstNonRepetitiveChar {
@@ -30,7 +31,7 @@ public class FirstNonRepetitiveChar {
         }
 
         // Find the first character with a count of 1
-        for (Map.Entry<Character, Integer> entry : charCountMap.entrySet()) {
+        for (Entry<Character, Integer> entry : charCountMap.entrySet()) {
             if (entry.getValue() == 1) {
                 return entry.getKey();
             }
