@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.stream.Collectors;
 
-public class AlertEnterprise_FindVowels {
+public class FindVowels {
 		public static void main(String[] args) {
 		  String str="AlertEnterprise";
 		  findVowels(str);

@@ -3,9 +3,9 @@ package interviewQuestions;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
-public class BirdEyeSentenceReverse {
+public class ReverseWordsInSentence {
 	public static void main(String[] args) {
-		BirdEyeSentenceReverse obj=new BirdEyeSentenceReverse();
+		ReverseWordsInSentence obj=new ReverseWordsInSentence();
         // obj.logic1();
 		obj.logic2();
         // obj.logic3();

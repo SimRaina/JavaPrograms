@@ -1,3 +1,4 @@
+package interviewQuestions;
 import java.util.Arrays;
 
 public class AnagramCheck {

@@ -1,4 +1,4 @@
-package interviewQuestions;
+package Numbers;
 
 public class BinaryToDecimal{
 	 

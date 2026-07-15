@@ -13,7 +13,7 @@ public class MinimumValue {
 	public static int min(int[] arr) {
         int[] input = {4,2,1,6,0,8,7};
 		int min=arr[0];
-        for (int j : arr) {
+        for (int j : input) {
             if (j < min) {
                 min = j;
             }

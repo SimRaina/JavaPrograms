@@ -1,3 +1,5 @@
+package interviewQuestions;
+
 public class IncrementCharacter {
     public static void main(String[] args) {
         String input = "aceg"; // output "bdfh"
