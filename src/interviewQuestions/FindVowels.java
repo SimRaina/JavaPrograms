@@ -21,7 +21,8 @@ public class FindVowels {
 			}
 		}
 			for (Entry<Character,Integer> entry: map.entrySet()){
-				System.out.println("Character: " + entry.getKey() + " occurred in the string: " + entry.getValue() + " times" );
+				System.out.println("Character: " + entry.getKey() 
+				+ " occurred in the string: " + entry.getValue() + " times" );
 			}
 		}
 
