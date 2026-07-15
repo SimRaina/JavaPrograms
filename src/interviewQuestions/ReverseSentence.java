@@ -1,11 +1,10 @@
 package interviewQuestions;
 
-
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.stream.Collectors;
 
-public class TestingXperts_ReverseSentence {
+public class ReverseSentence {
 	public static void main(String[] args) {
 		String str="This is my name";
 		System.out.println("Reverse is=> " + findReverse(str));
