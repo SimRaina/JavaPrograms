@@ -17,7 +17,7 @@ public class ReverseArray {
       for(int i=0; i<=size/2; i++) {
           int k=i;
           int temp = arr[k];
-          arr[k] = arr[size -1 -i]; // -1, -2, ...
+          arr[k] = arr[size-i-1]; // -1, -2, ...
           arr[size-i-1] = temp;
       }
 
