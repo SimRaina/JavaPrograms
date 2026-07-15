@@ -5,10 +5,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-/**
- * @author Simran
- *
- */
 public class DuplicateCharInString {
 
 	public static void main(String[] args) {
@@ -25,7 +21,8 @@ public class DuplicateCharInString {
 		}
 			for(Entry<Character,Integer> entry: map.entrySet()) {
 				if(entry.getValue()>1) {
-					System.out.println("Character " + entry.getKey()+" occurs "+entry.getValue() + " times.");
+					System.out.println("Character " + entry.getKey()
+					+" occurs "+entry.getValue() + " times.");
 				}
 		}
 	}
@@ -38,7 +35,8 @@ public class DuplicateCharInString {
                 .stream()
                 .filter(e -> e.getValue() > 1)
                 .forEach(e ->
-                        System.out.println("Character " + e.getKey() + " occurs " + e.getValue() + " times.")
+                        System.out.println("Character " + e.getKey() 
+						+ " occurs " + e.getValue() + " times.")
                 );
     }
 }
