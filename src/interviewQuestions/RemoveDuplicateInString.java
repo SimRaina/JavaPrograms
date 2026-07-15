@@ -13,7 +13,7 @@ public class RemoveDuplicateInString {
 		Set<Character> set=new HashSet<>();
 		for(int i=0;i<str.length();i++) {
 			char c=str.charAt(i);  
-			set.add(c); // set doesn't contain duplicate
+			set.add(c); // set doesn't allow duplicate
 	        }
 	    System.out.println("Size of String with non repeating charcters:" + set.size());
     }
