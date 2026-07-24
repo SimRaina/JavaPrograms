@@ -1,29 +1,30 @@
 package numbers;
 
-public class BinaryToDecimal{
-	 
-	  public int BinaryToDecimal1(int binaryNumber){
-	 
-	    int decimal = 0;
-	    int p = 0;
-	    while(true){
-	      if(binaryNumber == 0){
-	        break;
-	      } else {
-	          int temp = binaryNumber%10;
-	          decimal += temp*Math.pow(2, p);
-	          binaryNumber = binaryNumber/10;
-	          p++;
-	       }
-	    }
-	    return decimal;
-	  }
-	 
-	  public static void main(String args[]){
-		  BinaryToDecimal obj = new BinaryToDecimal();
-	    System.out.println("110 --> "+obj.BinaryToDecimal1(110));
-	    System.out.println("1101 --> "+obj.BinaryToDecimal1(1101));
-	    System.out.println("100 --> "+obj.BinaryToDecimal1(100));
-	    System.out.println("110111 --> "+obj.BinaryToDecimal1(110111));
-	  }
-	}
+public class BinaryToDecimal {
+
+    public static int binaryToDecimal(int binaryNumber) {
+
+        int decimal = 0;
+        int position = 0;
+
+        while (binaryNumber != 0) {
+
+            int digit = binaryNumber % 10;
+
+            decimal += digit * Math.pow(2, position);  // decimal += digit * (1 << position);
+
+            binaryNumber /= 10;
+            position++;
+        }
+
+        return decimal;
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println("110 --> " + binaryToDecimal(110));
+        System.out.println("1101 --> " + binaryToDecimal(1101));
+        System.out.println("100 --> " + binaryToDecimal(100));
+        System.out.println("110111 --> " + binaryToDecimal(110111));
+    }
+}
