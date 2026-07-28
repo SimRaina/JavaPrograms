@@ -6,10 +6,10 @@ import java.util.stream.IntStream;
 public class MoveOnes {
 	public static void main(String[] args) {
 		int[] arr = {4, 0, 2, 0, 7, 1, 0, 6, 8};
-		moveZeroes(arr);
-        // moveZeroes1(arr);
+		moveOnes(arr);
+        // moveOnes1(arr);
 	 }
-	static void moveZeroes(int[] arr1) {
+	static void moveOnes(int[] arr1) {
         int index = 0;
 		 int n = arr1.length;
 		 
@@ -26,7 +26,7 @@ public class MoveOnes {
          }
       }
 
-    static void moveZeroes1(int[] arr1) {
+    static void moveOnes1(int[] arr1) {
         int[] result =
                 IntStream.concat(
                         Arrays.stream(arr1).filter(x -> x != 0),   // all non-zero values
