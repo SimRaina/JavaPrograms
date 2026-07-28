@@ -10,7 +10,7 @@ public class MoveOnes {
         // moveOnes1(arr);
 	 }
 	static void moveOnes(int[] arr1) {
-        int index = 0;
+         int index = 0;
 		 int n = arr1.length;
 		 
 		 for(int i = 0; i < n; i++) {
