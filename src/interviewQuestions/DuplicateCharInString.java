@@ -19,11 +19,10 @@ public class DuplicateCharInString {
 		for (char c: str.toCharArray()) {
 			map.put(c, map.getOrDefault(c,0)+1);
 		}
-			for(Entry<Character,Integer> entry: map.entrySet()) {
-				if(entry.getValue()>1) {
-					System.out.println("Character " + entry.getKey()
-					+" occurs "+entry.getValue() + " times.");
-				}
+		for(Entry<Character,Integer> entry: map.entrySet()) {
+			if(entry.getValue()>1) {
+				System.out.println("Character " + entry.getKey() +" occurs "+entry.getValue() + " times.");
+			}
 		}
 	}
 
