@@ -15,7 +15,7 @@ public class MissingNumberArray {
 	private static int getMissingNumber(int[] array, int n) {
 		int actualsum = 0;
 		int expectedsum = n * (n + 1) / 2;
-		for (int i:array) {
+		for (int i : array) {
 			actualsum += i;
 		}
 		return expectedsum - actualsum;
