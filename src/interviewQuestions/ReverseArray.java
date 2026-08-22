@@ -8,7 +8,6 @@ public class ReverseArray {
 	public static void main(String[] args) {
 		reverseArray(); // Reverse array without using another array
         // reverseArray1();
-        // reverseArray2();
   }
 
   public static void reverseArray() {
@@ -34,14 +33,5 @@ public class ReverseArray {
           arr[j] = temp;
       }
       System.out.println(Arrays.toString(arr));
-  }
-
-  public static void reverseArray2() {
-      int[] arr = {2,4,6,8,10};
-      int[] reversed = IntStream.range(0, arr.length)
-              .map(i -> arr[arr.length - 1 - i])
-              .toArray();
-
-      System.out.println(Arrays.toString(reversed));
   }
 }
