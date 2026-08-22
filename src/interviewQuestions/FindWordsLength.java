@@ -17,11 +17,8 @@ public class FindWordsLength {
 	
 	static void count(String str) {
 		char[] ch=str.toCharArray();
-		
 		for (int i=0;i<ch.length;i++) {
-			
 			StringBuilder s= new StringBuilder();
-			
 			while(i<ch.length && ch[i]!=' ') {
 				s.append(ch[i]);
 				i++;
@@ -33,7 +30,6 @@ public class FindWordsLength {
 
 	static void count2(String str) {
 		String[] words = str.split(" ");
-
 		for (String s : words) {
 			if (!s.isEmpty()) {
 				System.out.println(s + " -> " + s.length());
