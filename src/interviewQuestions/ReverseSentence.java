@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class ReverseSentence {
 	public static void main(String[] args) {
-		String str="This is my name";
+		String str="This is my name"; // OUTPUT: name my is This
 		System.out.println("Reverse is=> " + findReverse(str));
         // System.out.println("Reverse is=> " + findreverse1(str));
 	}
