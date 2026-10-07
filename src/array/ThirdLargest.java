@@ -1,7 +1,7 @@
 package array;
 
 public class ThirdLargest {
-	static void thirdLargest2(int arr[], int arr_size) { 
+	static void thirdLargest(int arr[], int arr_size) { 
 		if (arr_size < 3) { 
 			System.out.printf(" Invalid Input "); 
 			return; 
@@ -27,7 +27,6 @@ public class ThirdLargest {
 	{ 
 		int arr[] = {12, 13, 1, 10, 34, 16}; 
 		int n = arr.length; 
-		thirdLargest1(arr, n); 
-		thirdLargest2(arr,n);
+		thirdLargest(arr, n); 
 	} 
 }
