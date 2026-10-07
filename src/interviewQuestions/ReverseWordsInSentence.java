@@ -15,7 +15,7 @@ public class ReverseWordsInSentence {
 		String str="This is me";  // OUTPUT: siht si em
 		String s="";
 		char[] ch=str.toCharArray();
-		for(int i=0;i<ch.length;i++) {
+		for(int i = 0; i < ch.length; i++) {
 			int k=i;
 			while (i<ch.length && ch[i]!=' ') {
 				i++;
