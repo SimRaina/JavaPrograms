@@ -20,7 +20,7 @@ public class ReverseWordsInSentence {
 			while (i<ch.length && ch[i]!=' ') {
 				i++;
 			}
-			for(int j=i-1;j>=k;j--) {  // Reverse String logic
+			for(int j = i-1; j >= k; j--) {  // Reverse String logic
 				s=s+str.charAt(j); 
 			}
 			s=s+" ";
